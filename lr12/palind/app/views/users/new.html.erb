@@ -1,0 +1,5 @@
+<div class='container'>
+  <div class='headline'><%= 'new_user' %></div>
+
+  <%= render 'form', user: @user, submit_text: 'signup', url_path: create_user_path, back_path: signin_path %>
+</div>

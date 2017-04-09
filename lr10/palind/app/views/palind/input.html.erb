@@ -1,0 +1,9 @@
+<h1>Palind#input</h1>
+<p>Find me in app/views/palind/input.html.erb</p>
+	<%= form_tag("/palind/view.xml", :method => "get") do %>
+	<%= label_tag("Enter n:") %>
+	<%= text_field_tag(:n1) %> <br/>
+	<br/>
+	<%= submit_tag("Show palindroms") %>
+<% end %>
+<div id="result"></div>

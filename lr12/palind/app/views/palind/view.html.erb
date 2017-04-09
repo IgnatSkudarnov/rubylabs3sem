@@ -1,0 +1,24 @@
+<h1>Palind#view</h1>
+<p>Find me in app/views/palind/view.html.erb</p>
+<p><%= @result[0].to_s %> palindroms were found</p>
+<div class='table'>
+  <div class='row header'>
+    <div class='cell'>Number</div>
+    <div class='cell'>Squared number</div>
+  </div>
+  <% for i in 11..@result.size
+    if @result[i] != nil %>
+    <div class='row'>
+      <div class='cell'><%= i %></div>
+      <div class='cell'><%= @result[i] %></div>
+    </div>
+    <% end %>
+  <% end %>
+</div>
+<%= link_to "New calculation", :palind_input %>
+<div class='side_frame' id='current_user'>
+  <div>
+    <div class='headline'><%= t('user') + User.find(session[:current_user_id]).login %></div>
+    <%= link_to t('user_page') , user_path %>
+  </div>
+</div>

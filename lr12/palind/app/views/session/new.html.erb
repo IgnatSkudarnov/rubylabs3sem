@@ -1,0 +1,26 @@
+<h1>Session#new</h1>
+<p>Find me in app/views/session/new.html.erb</p>
+<div class='container'>
+  <div class='headline'><%= 'signin' %></div>
+  <div>
+    <%= form_for(:session, :url => session_path) do |f| %>
+      <div class='field'>
+        <%= f.label 'login', class: 'user_input_label', for: 'session_login' %>
+        <%= f.text_field :login %>
+      </div>
+      <div class='field'>
+        <%= f.label 'password', class: 'user_input_label', for: 'session_password' %>
+        <%= f.password_field :password %>
+      </div>
+      <div class='field'>
+        <%= f.submit 'signin' %>
+      </div>
+    <% end %>
+  </div>
+
+  <div id='notice'><%= notice %></div>
+  <div>
+    <span id='new_user_span'><%= 'new_user?' %> &nbsp;</span>
+    <%= link_to 'signup_now', signup_path %>
+  </div>
+</div>

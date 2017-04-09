@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="transformer.xslt"?>
+<hash>
+  <result>
+    <description>Result Array</description>
+    <type>Array</type>
+    <value type="array">
+      <value type="integer">3</value>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value type="integer">121</value>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value type="integer">484</value>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value type="integer">676</value>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value nil="true"/>
+      <value nil="true"/>
+    </value>
+  </result>
+</hash>

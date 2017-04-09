@@ -1,0 +1,22 @@
+.row{
+    display: table;
+    box-sizing: border-box;
+    border-right: solid 1px;
+    margin: auto;
+    width: 500px;
+}
+
+.header{
+    font-weight: bold;
+    border-top: solid 1px;
+}
+
+.cell{
+    display: table-cell;
+    vertical-align: top;
+    box-sizing: border-box;
+    border-left: solid 1px;
+    border-bottom: solid 1px;
+    text-align: center;
+    width: 50%;
+}

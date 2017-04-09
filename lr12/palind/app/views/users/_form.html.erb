@@ -1,0 +1,17 @@
+<div>
+  <%= form_for(:user, :url => url_path) do |f| %>
+    <div class='field'>
+      <%= f.label 'login', class: 'user_input_label', for: 'user_login' %>
+      <%= f.text_field :login %>
+    </div>
+    <div class='field'>
+      <%= f.label 'password', class: 'user_input_label', for: 'user_password' %>
+      <%= f.password_field :password %>
+    </div>
+
+    <div class='field'>
+      <%= f.submit submit_text %>
+      <%= link_to 'back', back_path, id: 'back_link' %>
+    </div>
+  <% end %>
+</div>

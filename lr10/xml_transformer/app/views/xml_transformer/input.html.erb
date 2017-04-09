@@ -1,0 +1,25 @@
+<h1>XmlTransformer#input</h1>
+<p>Find me in app/views/xml_transformer/input.html.erb</p>
+<div>
+    <%= form_tag('/palind/view', :method => 'get') do %>
+        <div>
+          <%= label_tag('Enter n', nil, for: 'input_n1') %>
+          <%= text_field_tag(:n1, nil, id: 'input_n1') %>
+        </div>
+        
+        <br/>
+        
+        <div>
+          <%= radio_button_tag(:format, 'html', true, id: 'choose_html') %>
+          <%= label_tag('html_answer', ('HTML answer').html_safe, for: 'choose_html') %>
+          <%= radio_button_tag(:format, 'xml', false, id: 'choose_xml') %>
+          <%= label_tag('xml_answer', ('XML answer').html_safe, for: 'choose_xml') %>
+        </div>
+        
+        <br/>
+        
+        <div>
+          <%= submit_tag("Show palindroms") %>
+        </div>
+    <% end %>
+</div>

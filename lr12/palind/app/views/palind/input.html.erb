@@ -1,0 +1,14 @@
+<h1>Palind#input</h1>
+<p>Find me in app/views/palind/input.html.erb</p>
+	<%= form_tag("/palind/view", :method => "get") do %>
+	<%= label_tag("Enter n:") %>
+	<%= text_field_tag(:n1) %> <br/>
+	<br/>
+	<%= submit_tag("Show palindroms") %>
+<% end %>
+<div class='side_frame' id='current_user'>
+  <div>
+    <div class='headline'><%= 'user' + User.find(session[:current_user_id]).login %></div>
+    <%= link_to 'user_page' , user_path %>
+  </div>
+</div>

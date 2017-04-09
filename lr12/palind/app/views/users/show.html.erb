@@ -1,0 +1,21 @@
+<div class='container'>
+  <div class='headline'><%= 'user_info' %></div>
+  <div class='user_information'>
+    <strong id='login_label'><%= 'login' %>:</strong>
+    <%= @user.login %>
+  </div>
+  <div class='user_information'>
+    <strong><%= 'password' %>:</strong>
+    <%= @user.password_filtered %>
+  </div>
+
+  <div id='user_control_links'>
+    <%= link_to 'signout', signout_path %>
+    <%= link_to 'edit', user_edit_path %>
+    <%= link_to 'destroy', destroy_user_path, data: { confirm: 'are_you_sure?' } %>
+    <%= link_to 'all_users', users_path %>
+    <%= link_to 'back', root_path %>
+  </div>
+
+  <div id='notice'><%= notice %></div>
+</div>

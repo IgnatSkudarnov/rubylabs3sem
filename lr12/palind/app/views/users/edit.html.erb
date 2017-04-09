@@ -1,0 +1,7 @@
+<div class='container'>
+  <div class='headline'><%= 'editing' %></div>
+
+  <%= render 'form', user: @user, submit_text: 'show', url_path: user_path, back_path: user_path %>
+
+  <div id='notice'><%= notice %></div>
+</div>
